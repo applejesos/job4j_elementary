@@ -1,22 +1,20 @@
 package ru.job4j.converter;
 
 public class Fit {
-    public static double manWeight(short m_height) {
-        double rsl = (m_height - 100) * 1.15;
-        return rsl;
+    public static double manWeight(short mHeight) {
+        return (mHeight - 100) * 1.15;
     }
 
-    public static double womanWeight(short w_height) {
-        double rsl = (w_height - 110) * 1.15;
-        return rsl;
+    public static double womanWeight(short wHeight) {
+        return (wHeight - 110) * 1.15;
     }
 
     public static void main(String[] args) {
-        short m_height = 187;
-        short w_height = 167;
-        double man = Fit.manWeight(m_height);
-        double woman = Fit.womanWeight(w_height);
-        System.out.println("Man " + m_height + " is " + man);
-        System.out.println("Woman " + w_height + " is " + woman);
+        short mHeight = 187;
+        short wHeight = 167;
+        double man = Fit.manWeight(mHeight);
+        double woman = Fit.womanWeight(wHeight);
+        System.out.println("Man " + mHeight + " is " + man);
+        System.out.println("Woman " + wHeight + " is " + woman);
     }
 }
