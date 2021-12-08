@@ -15,10 +15,7 @@ public class MathCalculator {
     }
 
     public static double cmonGuysAllTogether(double first, double second) {
-        return sum(first, second)
-                + multiply(first, second)
-                + diff(first, second)
-                + div(first, second);
+        return sumAndMultiply(first, second) + divAndDiff(first, second);
     }
 
     public static void main(String[] args) {
