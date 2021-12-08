@@ -29,7 +29,7 @@ public class Converter {
 
         float in = 140;
         float rToEexpected = 2;
-        float rToDexpected = 2;
+        float rToDexpected = 2.3333333f;
         float dToRexpected = 8400;
         float eToRexpected = 9800;
         float out = Converter.rubleToEuro(in);
@@ -39,7 +39,7 @@ public class Converter {
         boolean passed = rToEexpected == out;
         System.out.println("140 rubles are 2 euro. Test result : " + passed);
         boolean passed1 = rToDexpected == out1;
-        System.out.println("140 rubles are 2 dollars. Test result : " + passed1);
+        System.out.println("140 rubles are about 2 dollars. Test result : " + passed1);
         boolean passed2 = dToRexpected == out2;
         System.out.println("140 dollars are 8400 rubles. Test result : " + passed2);
         boolean passed3 = eToRexpected == out3;
